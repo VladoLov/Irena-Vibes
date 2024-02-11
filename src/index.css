@@ -503,6 +503,10 @@ Footer
   color: white;
   text-decoration: none;
   cursor: pointer;
+  transition: var(--transition);
+}
+.gird-left a:hover {
+  color: var(--clr-primary-5);
 }
 .gird-right {
   color: white;
@@ -511,8 +515,13 @@ Footer
   color: white;
   text-decoration: none;
   cursor: pointer;
+  transition: var(--transition);
+}
+.gird-right a:hover {
+  color: var(--clr-primary-5);
 }
 .google-map iframe {
+  margin: 2rem 0;
   border: 0.5rem solid var(--clr-primary-5);
   width: 19rem;
   height: 14rem;
