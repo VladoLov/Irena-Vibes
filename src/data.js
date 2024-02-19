@@ -1,6 +1,6 @@
-import stariMost from "./images/Stari most/mostar1.jpg";
-import vreloBune from "./images/Vrelo Bune/buna1.jpg";
-import kravice from "./images/Kravice/kravice1.jpg";
+import stariMost from "./images/Stari most/mostar1.webp";
+import vreloBune from "./images/Vrelo Bune/buna1.webp";
+import kravice from "./images/Kravice/kravice1.webp";
 
 export const pageLinks = [
   { id: 1, href: "#home", text: "home" },

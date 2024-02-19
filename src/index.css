@@ -345,7 +345,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(255, 187, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./images/mostar.jpeg") center/cover no-repeat;
+      url("./images/mostar.webp") center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
