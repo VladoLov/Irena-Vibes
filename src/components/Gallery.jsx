@@ -72,7 +72,7 @@ const Gallery = () => {
   /* eslint-disable react-hooks/exhaustive-deps */
 
   return (
-    <section className="section" id>
+    <section className="section" id="gallery">
       <Title title="Gallery" />
       {/* { {people.map((person) => {
         const { id, image } = person;

@@ -34,15 +34,20 @@ const Navbar = () => {
             <i className="fas fa-bars"></i>
           </button>
         </div>
-        <div>
+        <div
+        // className={`primary-navigation ${showLinks ? "nav-links" : ""}`}
+        // id="primary-navigation"
+        >
+          <PageLinks
+            parentClass={`nav-links ${showLinks ? "show-links" : ""}`}
+            itemClass="nav-link"
+          />
+        </div>
+        {/* <div className="primary-navigation" id="primary-navigation">
           {showLinks && (
             <PageLinks parentClass="nav-links" itemClass="nav-link" />
           )}
-        </div>
-        {/* <PageLinks
-          parentClass={`nav-links ${showLinks ? "show-links" : ""}`}
-          itemClass="nav-link"
-        /> */}
+        </div> */}
 
         <ul className="nav-icons">
           {socialLinks.map((link) => (

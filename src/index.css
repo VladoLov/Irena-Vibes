@@ -417,6 +417,8 @@ Services
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 .service-text {
   max-width: 20rem;
@@ -577,16 +579,16 @@ Footer
 Navbar
 ===============
 */
-/* add :not(.nav-logo) to img */
-/* Navbar styles */
+
 .navbar {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
-  z-index: 2;
+  z-index: 6;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -618,13 +620,9 @@ Navbar
   transition: var(--transition);
 }
 
-.nav-toggle:hover {
-  /* transform: scale(1.2); */
-  transform: rotate(90deg);
-}
-
 .nav-link {
   display: block;
+  justify-content: center;
   padding: 1rem 2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -632,6 +630,7 @@ Navbar
   color: var(--clr-grey-1);
   cursor: pointer;
   font-size: 1rem;
+  background: #fff;
 }
 
 .nav-link:hover {
@@ -647,10 +646,15 @@ Navbar
 
 /* nav toggle functionality */
 .nav-links {
+  display: none;
+  text-align: center;
   transition: var(--transition);
-  height: 0;
+  /* gap: 1rem; */
+  overflow: hidden;
+
+  /* overflow: hidden; */
 }
-.show-links .nav-links {
+.show-links {
   display: flex;
   height: 0;
   overflow: visible;

@@ -6,7 +6,8 @@ export const pageLinks = [
   { id: 1, href: "#home", text: "home" },
   { id: 2, href: "#about", text: "about" },
   { id: 3, href: "#features", text: "features" },
-  { id: 4, href: "#tours", text: "tours" },
+  { id: 4, href: "#gallery", text: "gallery" },
+  { id: 5, href: "#tours", text: "tours" },
 ];
 export const socialLinks = [
   {
@@ -23,12 +24,12 @@ export const socialLinks = [
 ];
 
 export const features = [
-  { id: 1, title: "Spacious Living Room" },
-  { id: 2, title: "Modern Kitchen" },
-  { id: 3, title: "Master Bedroom with Ensuite" },
-  { id: 4, title: "Scenic View" },
-  { id: 5, title: "High-Speed Internet" },
-  { id: 6, title: "Parking Space" },
+  { id: 1, title: "Spacious Living Room", icon: "fa fa-couch" },
+  { id: 2, title: "Modern Kitchen", icon: "fa fa-utensils" },
+  { id: 3, title: "Master Bedroom with Ensuite", icon: "fa fa-bed" },
+  { id: 4, title: "Scenic View", icon: "fa fa-mountain" },
+  { id: 5, title: "High-Speed Internet", icon: "fa fa-wifi" },
+  { id: 6, title: "Parking Space", icon: "fa fa-parking" },
 
   // Add more features as needed
 ];
