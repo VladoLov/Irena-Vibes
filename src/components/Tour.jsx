@@ -17,8 +17,8 @@ const Tour = ({ image, title, text, distance, duration }) => {
             </span>
             {distance}
           </p>
-          <p>Distance: {distance}</p>
-          <p>Minutes :{duration} </p>
+          <p>Distance: {distance} km</p>
+          <p>Min: {duration} </p>
         </div>
       </div>
     </article>

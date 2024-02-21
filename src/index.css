@@ -219,7 +219,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(255, 187, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./images/mostar.webp") bottom/cover no-repeat;
+      url("./images/mostar.jpeg") bottom/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -360,10 +360,17 @@ Footer
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
+
+.footer ul {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
 .footer-link {
   color: var(--clr-white);
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-right: 1rem;
   letter-spacing: var(--spacing);
   transition: var(--transition);
@@ -446,6 +453,10 @@ Footer
   .google-map iframe {
     width: 37.5rem;
     height: 28.1rem;
+  }
+
+  .footer-link {
+    font-size: 1rem;
   }
 }
 /*
