@@ -176,133 +176,6 @@ p {
 
 /*
 =============== 
-Global Styles
-===============
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
-  line-height: 1.5;
-  font-size: 0.875rem;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
-p {
-  margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
-}
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/*  global classes */
-
-.btn {
-  text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  /* font-weight: 700; */
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid transparent;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-.btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
-}
-/* section */
-.section {
-  padding: 5rem 0;
-  scroll-margin-top: 4rem;
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.section-title h2 {
-  text-transform: uppercase;
-}
-.section-title span {
-  color: var(--clr-primary-5);
-}
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-
-/*
-=============== 
 Hero
 ===============
 */
@@ -319,11 +192,12 @@ Hero
 .hero-banner {
   text-align: center;
   color: var(--clr-white);
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 .hero-banner h1 {
   text-transform: uppercase;
 }
+
 .hero-banner p {
   max-width: 35rem;
   margin-left: auto;
@@ -345,7 +219,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(255, 187, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./images/mostar.webp") center/cover no-repeat;
+      url("./images/mostar.webp") bottom/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -640,21 +514,24 @@ Navbar
 }
 
 .nav-logo {
-  height: 30px;
-  width: 175px;
+  height: 1.9rem;
+  width: 11rem;
 }
 
 /* nav toggle functionality */
 .nav-links {
-  display: none;
+  /* position: fixed; */
+  display: flex;
   text-align: center;
   transition: var(--transition);
   /* gap: 1rem; */
   overflow: hidden;
-
-  /* overflow: hidden; */
+  flex-direction: column;
+  height: 0;
+  margin: 0;
 }
-.show-links {
+
+.show-links.nav-links {
   display: flex;
   height: 0;
   overflow: visible;
@@ -675,6 +552,9 @@ Navbar
     height: auto;
     flex-direction: row;
   }
+  .nav-links ul {
+    display: flex;
+  }
   .nav-center {
     display: flex;
     justify-content: space-between;
@@ -686,6 +566,7 @@ Navbar
     padding: 0 0;
   }
   .nav-link {
+    display: flex;
     padding: 0 0;
   }
   .nav-link:hover {
@@ -721,7 +602,7 @@ Gallery
   margin-top: 5rem;
   /* margin-bottom: 5rem; */
   width: 80vw;
-  max-width: 800px;
+  max-width: 50rem;
   position: relative;
   height: 30rem;
   overflow: hidden;
@@ -746,7 +627,7 @@ Gallery
 .prev,
 .next {
   position: absolute;
-  top: 200px;
+  top: 12.5rem;
   background: var(--clr-grey-4);
   width: 1.25rem;
   height: 1.25rem;
